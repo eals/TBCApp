@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Invoice</string>
+    <string name="btn_1">Invoice</string>
+    <string name="btn_2">Items</string>
+    <string name="btn_3">Search</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_invoice_view">Invoice</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_items_view">Items_view</string>
+    <string name="_item_name">Item Name</string>
+    <string name="_item_rate">Item Rate</string>
+    <string name="_add_item">add</string>
+    <string name="_update_item">update</string>
+    <string name="_delete_item">delete</string>
+    <string name="_item_name_title">name:</string>
+    <string name="_item_rate_title">rate:</string>
+
+    <string name="_add_customer">add</string>
+
+    <string name="_Const_First_Name">First Name: </string>
+    <string name="_Const_Last_Name">Last Name: </string>
+    <string name="_Const_Address">Address: </string>
+    <string name="_Const_Street">Street: </string>
+    <string name="_Const_City">City: </string>
+    <string name="_Const_State">State: </string>
+    <string name="_Const_Zip">Zip: </string>
+    <string name="_Const_Notes">Notes: </string>
+    <string name="_Const_Phone">Phone: </string>
+    <string name="_Const_Email">Email: </string>
+    <string name="_Const_Cust_ID">Cust_ID: </string>
+    <string name="_Const_Invoice_ID">Invoice # </string>
+    <string name="_Add_Invoice_Item">Add Invoice Item</string>
+    <string name="title_activity_add_invoice_item_view">AddInvoiceItemView</string>
+    <string name="F_item_Quantity">FT:</string>
+    <string name="B_item_Quantity">BK:</string>
+    <string name="L_item_Quantity">LT:</string>
+    <string name="R_item_Quantity">RT:</string>
+    <string name="Total">Total</string>
+    <string name="F">F</string>
+    <string name="B">B</string>
+    <string name="L">L</string>
+    <string name="R">R</string>
+    <string name="_Refresh">Refresh</string>
+    <string name="Date">Date:</string>
+    <string name="printView">Print View</string>
+
+    <!-- Search List View -->
+    <string name="InvoiceNum">IN#:</string>
+    <string name="InvoiceDate">Date:</string>
+    <string name="First">FN:</string>
+    <string name="Last">LN:</string>
+
+    <string name="Quantity">QTY:</string>
+    <color name="lt_blue">#7f99ff</color>
+    <string name="title_activity_invoice_print_view">InvoicePrintView</string>
+
+    <!-- Print View -->
+    <string name="Estimate" >Estimate</string>
+    <string name="CompanyName">Gutter-Runner LLC.</string>
+    <string name="CompanyStreet">4771 Landmark Ln.</string>
+    <string name="CompanyCity">Pace, FL 32571</string>
+    <string name="CompanyState">FL</string>
+    <string name="CompanyZip">32571</string>
+
+
+
+</resources>

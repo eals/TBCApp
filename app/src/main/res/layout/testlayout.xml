@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="#e0e0e0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:background="#4d57d9"
+            android:id="@+id/main_toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/home"
+                    android:id="@+id/home"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:id="@+id/home_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Home"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_below="@id/main_toolbar"
+            android:id="@+id/first_row"
+            android:background="#fff"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/bookButton"
+                    android:padding="40dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#c71014"
+                    android:src="@drawable/ebook"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/calendarButton"
+                    android:padding="40dp"
+                    android:background="#d75608"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/calender"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/first_row"
+            android:id="@+id/second_row"
+            android:background="#fff"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:padding="10dp"
+                    android:id="@+id/notesButton"
+                    android:background="#7f43ee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/notes"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:padding="40dp"
+                    android:id="@+id/chatButton"
+                    android:background="#3d8bb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chat"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/second_row"
+            android:layout_width="match_parent"
+            android:id="@+id/list"
+            android:background="#e0e0e0"
+            android:layout_height="match_parent"></ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_drawer"
+        android:alpha="0.85"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="#e0e0e0">
+
+
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imagelogo"
+            android:src="@drawable/colllege_logo"
+
+            />
+
+        <TextView
+            android:layout_below="@id/imagelogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            />
+
+
+
+        <ListView
+            android:padding="0dp"
+            android:id="@+id/leftlist"
+            android:alpha="1"
+            android:layout_below="@id/imagelogo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:choiceMode="singleChoice"
+            android:divider="#2E3192"
+            android:background="#fff"/>
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

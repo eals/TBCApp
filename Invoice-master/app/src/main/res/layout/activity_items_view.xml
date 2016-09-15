@@ -1,0 +1,89 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.capstone.invoice.Items_view">
+
+     <TableLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal">
+
+         <TableRow
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_margin="10dp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceLarge"
+                 android:text="@string/_item_name"
+                 android:id="@+id/textView3" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/itemName" />
+         </TableRow>
+
+         <TableRow
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_margin="10dp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceLarge"
+                 android:text="@string/_item_rate"
+                 android:id="@+id/textView2" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="numberDecimal"
+                 android:ems="10"
+                 android:id="@+id/itemRate" />
+         </TableRow>
+     </TableLayout>
+     <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_margin="10dp">
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/_add_item"
+             android:id="@+id/button"
+             android:onClick="newItem" />
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/_update_item"
+             android:id="@+id/button2"
+             android:onClick="updateItem" />
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/_delete_item"
+             android:id="@+id/button3"
+             android:onClick="deleteItem" />
+
+
+     </LinearLayout>
+     <!-- Listview -->
+     <ListView
+         android:id="@+id/main_listview"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:layout_marginTop="20dp"></ListView>
+ </LinearLayout>
+

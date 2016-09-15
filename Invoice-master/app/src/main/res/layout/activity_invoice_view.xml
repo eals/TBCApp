@@ -1,0 +1,499 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <LinearLayout    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.capstone.invoice.Invoice">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/_Const_Invoice_ID"
+            android:id="@+id/ConstInvoiceID" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ConstInvoiceID"
+            android:gravity="right"
+            android:ems="4"
+            android:id="@+id/InvoiceIDText"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/InvoiceIDText"
+            android:inputType="date"
+            android:gravity="right"
+            android:ems="8"
+            android:id="@+id/DateText" />
+
+    </RelativeLayout>
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/_Const_First_Name"
+            android:id="@+id/ConstFirstNameText" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FirstNameText"/>
+
+
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/_Const_Last_Name"
+                    android:id="@+id/ConstLastNameText" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:id="@+id/LastNameText" />
+        </TableRow>
+            <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/_Const_Street"
+                android:id="@+id/ConstStreetText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:id="@+id/StreetText" />
+        </TableRow>
+            </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/_Const_City"
+                android:id="@+id/ConstCityText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:id="@+id/CityText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/_Const_State"
+                    android:id="@+id/ConstStateText" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:id="@+id/StateText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/_Const_Zip"
+                    android:id="@+id/ConstZipText" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:id="@+id/ZipText" />
+            </TableRow>
+
+        </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/_Const_Phone"
+            android:id="@+id/ConstPhoneText" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:id="@+id/PhoneText" />
+    </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/_Const_Notes"
+                android:id="@+id/ConstNotesText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="13"
+                android:id="@+id/NotesText" />
+        </TableRow>
+</TableLayout>
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_margin="10dp">-->
+
+
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/_add_customer"-->
+            <!--android:id="@+id/button2"-->
+            <!--android:onClick="addInvoiceCustomer" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_Add_Invoice_Item"
+            android:id="@+id/ConstaddInvoiceItem"
+            />
+
+
+
+
+   </LinearLayout>
+    <ListView
+        android:id="@+id/FInvoice_Item_listview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:layout_marginTop="2dp"></ListView>
+     <View
+         android:layout_marginTop="5dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginBottom="5dp"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@android:color/darker_gray"/>
+
+     <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_margin="10dp">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+
+             android:text="Allow Total"
+             android:id="@+id/ConstAllowTotal" />
+         <CheckBox
+             android:layout_width="wrap_content"
+             android:layout_marginLeft="1dp"
+             android:layout_height="wrap_content"
+             android:id="@+id/CheckFront"
+             android:text="@string/F_item_Quantity"/>
+         <CheckBox
+             android:layout_width="wrap_content"
+             android:layout_marginLeft="1dp"
+             android:layout_height="wrap_content"
+             android:id="@+id/CheckBack"
+             android:text="@string/B_item_Quantity"/>
+         <CheckBox
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="1dp"
+             android:id="@+id/CheckLeft"
+             android:text="@string/L_item_Quantity"/>
+         <CheckBox
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="1dp"
+             android:id="@+id/CheckRight"
+             android:text="@string/R_item_Quantity"/>
+     </LinearLayout>
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView
+             android:id="@+id/ConstFTotal"
+             android:layout_width="wrap_content"
+             android:text="@string/Total"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_alignParentLeft="true"
+             />
+
+         <TextView
+             android:id="@+id/FTotal"
+             android:layout_width="wrap_content"
+             android:text="@string/F"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_toRightOf="@+id/ConstFTotal"
+             />
+         <TextView
+             android:id="@+id/FTotalValue"
+             android:layout_width="wrap_content"
+             android:text="$0"
+             android:ems="5"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_toRightOf="@+id/FTotal"
+             />
+
+
+     </RelativeLayout>
+     <RelativeLayout
+     android:layout_marginTop="2dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <TextView
+         android:id="@+id/ConstBTotal"
+         android:layout_width="wrap_content"
+         android:text="@string/Total"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_alignParentLeft="true"
+         />
+
+     <TextView
+         android:id="@+id/BTotal"
+         android:layout_width="wrap_content"
+         android:text="@string/B"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_toRightOf="@+id/ConstBTotal"
+         />
+     <TextView
+         android:id="@+id/BTotalValue"
+         android:layout_width="wrap_content"
+         android:text="$0"
+         android:ems="5"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_toRightOf="@+id/BTotal"
+         />
+ </RelativeLayout>
+     <RelativeLayout
+         android:layout_marginTop="2dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView
+             android:id="@+id/ConstLTotal"
+             android:layout_width="wrap_content"
+             android:text="@string/Total"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_alignParentLeft="true"
+             />
+
+         <TextView
+             android:id="@+id/LTotal"
+             android:layout_width="wrap_content"
+             android:text="@string/L"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_toRightOf="@+id/ConstLTotal"
+             />
+         <TextView
+             android:id="@+id/LTotalValue"
+             android:layout_width="wrap_content"
+             android:text="$0"
+             android:ems="5"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_toRightOf="@+id/LTotal"
+             />
+     </RelativeLayout>
+     <RelativeLayout
+         android:layout_marginTop="2dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+     <TextView
+         android:id="@+id/ConstRTotal"
+         android:layout_width="wrap_content"
+         android:text="@string/Total"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_alignParentLeft="true"
+         />
+
+     <TextView
+         android:id="@+id/RTotal"
+         android:layout_width="wrap_content"
+         android:text="@string/R"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_toRightOf="@+id/ConstRTotal"
+         />
+     <TextView
+         android:id="@+id/RTotalValue"
+         android:layout_width="wrap_content"
+         android:text="$0"
+         android:ems="5"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_toRightOf="@+id/RTotal"
+         />
+     </RelativeLayout>
+     <View
+         android:layout_marginTop="5dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginBottom="5dp"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@android:color/darker_gray"/>
+
+     <RelativeLayout
+         android:layout_marginTop="2dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView
+             android:id="@+id/ConstTotal"
+             android:layout_width="wrap_content"
+             android:text="@string/Total"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_alignParentLeft="true"
+             />
+
+         <TextView
+             android:id="@+id/FinalTotal"
+             android:layout_width="wrap_content"
+             android:text="$0"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_toRightOf="@+id/ConstTotal"
+             />
+
+     </RelativeLayout>
+     <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_margin="10dp">
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Add invoice"
+             android:id="@+id/ConstaddInvoiceButton"
+             android:onClick="AddInvoice"
+             />
+
+         <Button
+             android:id="@+id/PrintViewButton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:text="@string/printView"
+             android:onClick="refresh"
+             />
+
+     </LinearLayout>
+
+
+     </LinearLayout>
+</ScrollView>

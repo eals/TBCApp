@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent" android:layout_height="75dp">
+
+    <TextView
+        android:id="@+id/SINametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/InvoiceNum"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/SIName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/SINametext"
+        />
+
+    <TextView
+        android:id="@+id/SIDatetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="@string/InvoiceDate"
+        android:layout_toRightOf="@+id/SIName"
+        />
+
+    <TextView
+        android:id="@+id/SIDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/SIDatetext"
+        />
+
+    <TextView
+        android:id="@+id/FNtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/First"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/SINametext"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/FName"
+        android:layout_alignBottom="@+id/FNtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/FNtext"
+        />
+
+    <TextView
+        android:id="@+id/LNtext"
+        android:layout_alignBottom="@+id/FNtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="@string/Last"
+        android:layout_toRightOf="@+id/FName"
+        />
+
+    <TextView
+        android:id="@+id/LName"
+        android:layout_alignBottom="@+id/FNtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/LNtext"
+        />
+
+</RelativeLayout>

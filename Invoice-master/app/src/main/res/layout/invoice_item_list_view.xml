@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent" android:layout_height="75dp">
+
+
+    <TextView
+        android:id="@+id/text_item_name"
+        android:layout_width="100dp"
+        android:text="@string/_item_name_title"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/text_item_rate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="@string/_item_rate_title"
+        android:layout_toRightOf="@+id/text_item_name"
+        />
+
+    <TextView
+        android:id="@+id/text_item_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_item_rate_title"
+        />
+
+    <TextView
+        android:id="@+id/text_Quantity"
+        android:text="@string/Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_item_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:id="@+id/text_InvoiceFQName"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/F_item_Quantity"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_Quantity"
+        android:layout_alignBottom="@+id/text_Quantity"
+        android:textColor="@color/lt_blue" />
+
+    <TextView
+        android:id="@+id/text_InvoiceFQuantity"
+        android:layout_width="25dp"
+        android:layout_marginLeft="4dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_InvoiceFQName"
+        android:layout_alignBottom="@+id/text_Quantity"
+        />
+    <TextView
+        android:id="@+id/text_InvoiceBQName"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/B_item_Quantity"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_InvoiceFQuantity"
+        android:layout_alignBottom="@+id/text_Quantity"
+        android:textColor="@color/lt_blue" />
+    <TextView
+        android:id="@+id/text_InvoiceBQuantity"
+        android:layout_width="25dp"
+        android:layout_marginLeft="4dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_InvoiceBQName"
+        android:layout_alignBottom="@+id/text_Quantity"
+        />
+    <TextView
+        android:id="@+id/text_InvoiceLQName"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/L_item_Quantity"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_InvoiceBQuantity"
+        android:layout_alignBottom="@+id/text_Quantity"
+        android:textColor="@color/lt_blue" />
+    <TextView
+        android:id="@+id/text_InvoiceLQuantity"
+        android:layout_width="25dp"
+        android:layout_marginLeft="4dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_InvoiceLQName"
+        android:layout_alignBottom="@+id/text_Quantity"
+        />
+
+    <TextView
+        android:id="@+id/text_InvoiceRQName"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/R_item_Quantity"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_InvoiceLQuantity"
+        android:layout_alignBottom="@+id/text_Quantity"
+        android:textColor="@color/lt_blue" />
+    <TextView
+        android:id="@+id/text_InvoiceRQuantity"
+        android:layout_width="25dp"
+        android:layout_marginLeft="4dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_InvoiceRQName"
+        android:layout_alignBottom="@+id/text_Quantity"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TBCApp</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="about_us">"\t It is the application where students can get all required informaiton about their college as well as their studies.\n  \t Now students don't need to collect bunch of note and chat applications, its all in it."
+        "FEATURES:\n-Personal Info regarding fees, performance,etc,\n-College calender with notification for the new events,\n-ClassSchedules(Dynamic),\n-Group Chat\n-Note taking and Ebook facility\n-College information and event notification\n-more in coming days...
+        \nDevelopers:
+         Code Giants:
+            Avinash Mishra
+            Alish Manandhar
+        Managers:
+        Code Giants:
+            Aakar Bista
+            Mixon Tandukar
+        "
+    </string>
+</resources>
