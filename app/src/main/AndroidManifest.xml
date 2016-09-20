@@ -24,7 +24,8 @@
         <activity
             android:name=".Timetable"
             android:screenOrientation="landscape" />
-        <activity android:name=".About"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".BookActivity"></activity>
     </application>
 
 </manifest>

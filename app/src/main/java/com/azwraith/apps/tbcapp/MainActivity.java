@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView chatButton;
     TextView txt_title;
     private ImageView notesButton;
+    private ImageView bookButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +78,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, ChatActivity.class));
             }
         });
+
+        bookButton = (ImageView)findViewById(R.id.bookButton);
+
+        bookButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Loading...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, BookActivity.class));
+            }
+        });
+
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, values)
         {

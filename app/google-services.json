@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "910334856611",
+    "firebase_url": "https://tbchat-ddb46.firebaseio.com",
+    "project_id": "tbchat-ddb46",
+    "storage_bucket": "tbchat-ddb46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910334856611:android:f0bb2f0a069d8b79",
+        "android_client_info": {
+          "package_name": "com.azwraith.apps.tbcapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910334856611-48ui53otef2k0c3gvu8vj3cmjjkum022.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.azwraith.apps.tbcapp",
+            "certificate_hash": "CF39F1C14A9459846FC5F48FE4A0BAAD9AA1A6F7"
+          }
+        },
+        {
+          "client_id": "910334856611-qithjbf84n19al2d67d25ib4m400185k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn2QiTkTOUIjZCz35rKklgk6ns62ou9wA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910334856611-qithjbf84n19al2d67d25ib4m400185k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
